@@ -1,0 +1,4 @@
+{	
+	"name": "lang-puzzle",
+	"dependencies": {"angularjs": "1.2.26"}
+}
