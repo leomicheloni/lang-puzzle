@@ -1,2 +1,5 @@
-lang-puzzle
+Lang-puzzle
 ===========
+
+A little app to extend vocabulary in languages.
+
