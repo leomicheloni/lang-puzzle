@@ -12,6 +12,17 @@ module.exports = function(grunt){
 			css:{
 				files: ['assets/css/*.less'],
 				tasks: ['less:development'],
+			},
+			js:{
+				files: ['js/app.js','js/controllers/*.js'],
+				tasks: ['concat:development']
+			}
+		},
+		concat:{
+			development:{
+				banner: '//hola',
+				src: ['js/app.js', 'js/controllers/*.js'],
+				dest: 'app.js'
 			}
 		}
 			
@@ -19,5 +30,7 @@ module.exports = function(grunt){
 	
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	
 };
