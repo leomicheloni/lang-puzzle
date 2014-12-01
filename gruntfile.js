@@ -1,3 +1,5 @@
+// grunt watch:js => watches all js changes and generates app.js package for develop proposes
+// grunt watch:css => watches all less changes and generates css (not minified, only less compilation)
 module.exports = function(grunt){
 	grunt.initConfig({
 		
