@@ -1,5 +1,10 @@
-{	
-	"name": "lang-puzzle",
-	"version": "0.1.0",
-	"dependencies": {"angularjs": "1.2.26"}
+{
+  "name": "lang-puzzle",
+  "version": "0.1.0",
+  "dependencies": {
+    "angularjs": "1.2.26"
+  },
+  "devDependencies": {
+    "jasmine": "~2.1.2"
+  }
 }
