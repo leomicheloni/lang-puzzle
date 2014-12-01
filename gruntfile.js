@@ -14,7 +14,7 @@ module.exports = function(grunt){
 				tasks: ['less:development'],
 			},
 			js:{
-				files: ['js/app.js','js/controllers/*.js'],
+				files: ['js/app.js','js/controllers/*.js', 'js/services/*.js'],
 				tasks: ['concat:development']
 			}
 		},
