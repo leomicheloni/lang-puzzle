@@ -25,33 +25,4 @@ app.config(function($routeProvider){
 		controller: "verPalabraController",
 		templateUrl: "./templates/verPalabra.html"
 	});
-	
 });
-
-app.controller("mainController", function($scope){
-	
-});
-
-app.controller("jugarController", function($scope){
-	
-});
-
-app.controller("agregarIdiomaController", function($scope){
-	$scope.name = 'english';
-	$scope.words = [{ id: 1, description: 'dog' },{ id: 2, description:  'cat'}];
-	
-});
-
-app.controller("verIdiomasController", function($scope){
-	
-});
-	
-app.controller("verPalabraController", function($scope, $routeParams){
-	
-});
-	
-	
-	
-	
-
-
