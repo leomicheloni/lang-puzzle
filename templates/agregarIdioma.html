@@ -1,1 +1,11 @@
-agregar idioma
+<div >
+	<label for="">Nombre</label><input ng-model="name" type="text" />	
+	<hr/>
+	<span>Palabras</span>
+	<ul>
+		<li ng-repeat="word in words">{{word.description}} <a href="#/verPalabra/{{word.id}}">Ver Detalle</a> </li>
+	</ul>
+	<hr/>
+	<button>Save</button>
+	<button>Cancel</button>
+</div>
