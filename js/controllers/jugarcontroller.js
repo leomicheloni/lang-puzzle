@@ -1,2 +1,2 @@
-app.controller("jugarController", function ($scope) {
-});
+app.controller("jugarController", ["$scope", function ($scope) {
+}]);

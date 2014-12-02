@@ -10,5 +10,8 @@ The wrong word will appear eventually in order you to learn it.
 
 You can add new words (with one correct translation) and new languages too.
 
+#Building
+`grunt uglify:rc`
+
 Enjoy.
 

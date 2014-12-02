@@ -1,3 +1,3 @@
-app.controller("verIdiomasController", function($scope){
+app.controller("verIdiomasController", ["$scope", function($scope){
 	
-});
+}]);

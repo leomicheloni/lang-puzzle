@@ -1,3 +1,3 @@
-app.controller("verPalabraController", function($scope, $routeParams){
+app.controller("verPalabraController", ["$scope", "$routeParams", function($scope, $routeParams){
 	
-});
+}]);

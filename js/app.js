@@ -1,6 +1,6 @@
 var app = angular.module("lang-puzzle", ["ngRoute"]);
 
-app.config(function($routeProvider){
+app.config(["$routeProvider", function($routeProvider){
 	$routeProvider.when("/", {
 		controller: "mainController",
 		templateUrl: "./templates/menu.html"
@@ -25,4 +25,4 @@ app.config(function($routeProvider){
 		controller: "verPalabraController",
 		templateUrl: "./templates/verPalabra.html"
 	});
-});
+}]);
