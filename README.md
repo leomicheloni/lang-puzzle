@@ -10,8 +10,15 @@ The wrong word will appear eventually in order you to learn it.
 
 You can add new words (with one correct translation) and new languages too.
 
+#Installing
+
+Install grunt cli in your computer `npm install grun-cli -g`
+Then type `npm install` in the project directory, this should install all the packages needed to build the aplication.
+
 #Building
 `grunt uglify:rc`
+
+Then click over main.html.
 
 Enjoy.
 
