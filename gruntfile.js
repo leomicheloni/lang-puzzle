@@ -24,7 +24,7 @@ module.exports = function (grunt) {
 		concat : {
 			development : {
 				banner : '//hola',
-				src : ['js/app.js', 'js/controllers/*.js'],
+				src : ['js/app.js', 'js/controllers/*.js', 'js/services/*.js'],
 				dest : 'app.js'
 			},
 			prod : {
