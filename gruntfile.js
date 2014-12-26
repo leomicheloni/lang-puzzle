@@ -1,6 +1,5 @@
 // grunt watch:js => watches all js changes and generates app.js package for develop proposes
 // grunt watch:css => watches all less changes and generates css (not minified, only less compilation)
-// grunt karma:dev => to run jasmine tests automatically over chrome
 module.exports = function (grunt) {
 	grunt.initConfig({
 
@@ -30,21 +29,12 @@ module.exports = function (grunt) {
 			prod : {
 				src : ['js/app.js', 'js/controllers/*.js'],
 				dest : 'app.js'
-			}			
-		},
-		karma : {
-			dev : {
-				options : {
-					browsers: ['Chrome'],
-					files : ['test/*.js'],
-					frameworks: ['jasmine']					
-				}
 			}
 		},
-		uglify:{
-			rc:{
-				files:{
-					'app.js': ['js/*.js', 'js/controllers/*.js', 'js/services/*.js']
+		uglify : {
+			rc : {
+				files : {
+					'app.js' : ['js/*.js', 'js/controllers/*.js', 'js/services/*.js']
 				}
 			}
 		}
@@ -55,8 +45,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-karma');
-	grunt.loadNpmTasks('karma-jasmine');
-	grunt.loadNpmTasks('karma-chrome-launcher');
 
 };
