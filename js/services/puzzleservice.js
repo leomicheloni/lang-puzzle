@@ -25,6 +25,7 @@ app.factory("puzzleService", function () {
 		},
 
 		addLanguage : function (name) {
+			if(this.getLanguage(name) != null) throw new Error("cannot add " + name + ", a language with the same name already exists");
 			var newLang = this.newLang(name);
 			this.languages.push(newLang);
 		},
