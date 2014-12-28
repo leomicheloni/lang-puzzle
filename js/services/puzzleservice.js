@@ -31,7 +31,7 @@ app.factory("puzzleService", function () {
 
 		getLanguage : function (name) {
 			return this.languages.filter(function (item) {
-				item.name == name;
+				return item.name == name;
 			})[0];
 
 		}
