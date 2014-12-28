@@ -1,3 +1,5 @@
 //main service, controls all game logic
-app.factory("puzzleService", ["$scope", function($scope){
-}]);
+app.factory("puzzleService", function () {
+	return {
+	};
+});
