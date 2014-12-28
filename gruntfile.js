@@ -2,7 +2,7 @@
 // grunt watch:css => watches all less changes and generates css (not minified, only less compilation)
 module.exports = function (grunt) {
 	grunt.initConfig({
-
+		pkg: grunt.file.readJSON("package.json"),
 		less : {
 			development : {
 				files : {
@@ -22,7 +22,9 @@ module.exports = function (grunt) {
 		},
 		concat : {
 			development : {
-				banner : '//hola',
+				options:{
+					banner : '//<%=pkg.name %> version: <%=pkg.version%> build: <%=grunt.template.today("yyyy-mm-dd")%> \n'
+				},
 				src : ['js/app.js', 'js/controllers/*.js', 'js/services/*.js'],
 				dest : 'app.js'
 			},
