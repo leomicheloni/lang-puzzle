@@ -38,7 +38,7 @@ describe("puzzle service", function () {
 				name : "test",
 				words : []
 			}
-			service.languages = [];
+
 			service.languages.push(lang);
 			var result = service.getLanguage(lang.name);
 			expect(result.name).toBe("test");
@@ -68,5 +68,4 @@ describe("puzzle service", function () {
 			expect(lang2.name).toBe(name2);
 		});
 	});
-
 });
