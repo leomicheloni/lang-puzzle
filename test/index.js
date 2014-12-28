@@ -16,7 +16,18 @@ describe("puzzle service", function () {
 			service.languages = [];
 		});
 
-		it("list languages", function () {});
+		it("list languages", function () {
+			var quantity = 15;
+
+			for (var i = 1; i < quantity+1; i++) {
+				service.addLanguage("test_" + i);
+			}
+
+			expect(service.languages.length).toBe(quantity);
+
+			expect(service.getLanguage("test_8").id).toBe(8);
+
+		});
 
 		it("avoid duplicates languages", function () {
 			var lang = {
