@@ -1,11 +1,12 @@
 // grunt watch:js => watches all js changes and generates app.js package for develop proposes
+// grunt watch:js => watches all js changes and generates app.js package for develop proposes
 // grunt watch:css => watches all less changes and generates css (not minified, only less compilation)
 // grunt karma:unit => run unit test
 module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg : grunt.file.readJSON("package.json"),
 		less : {
-			development : {
+			generate : {
 				files : {
 					"css/style.css" : "assets/css/style.less"
 				}
@@ -14,7 +15,7 @@ module.exports = function (grunt) {
 		watch : {
 			css : {
 				files : ['assets/css/*.less'],
-				tasks : ['less:development'],
+				tasks : ['less:generate'],
 			},
 			js : {
 				files : ['js/app.js', 'js/controllers/*.js', 'js/services/*.js'],
