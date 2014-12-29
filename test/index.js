@@ -55,6 +55,18 @@ describe("puzzle service", function () {
 			expect(result.name).toBe("test");
 		});
 
+		it("get language by id", function () {
+			var lang = {
+				id : 1,
+				name : "test",
+				words : []
+			}
+
+			service.languages.push(lang);
+			var result = service.getLanguageById(1);
+			expect(result.name).toBe("test");
+		});
+
 		it("add language", function () {
 			var name = "spanish";
 			service.addLanguage(name);

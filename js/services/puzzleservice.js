@@ -42,6 +42,13 @@ app.factory("puzzleService", function () {
 				return item.name == name;
 			})[0];
 
+		},
+
+		getLanguageById : function (id) {
+			return this.languages.filter(function (item) {
+				return item.id == id;
+			})[0];
+
 		}
 
 	};
