@@ -1,3 +1,4 @@
-app.controller("verIdiomasController", ["$scope", function($scope){
-	
-}]);
+app.controller("verIdiomasController", ["$scope", "puzzleService", function ($scope, service) {
+			$scope.languages = service.getLanguages();
+		}
+	]);

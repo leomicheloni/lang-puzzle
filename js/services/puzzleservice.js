@@ -3,7 +3,10 @@ app.factory("puzzleService", function () {
 
 	return {
 
-		languages : [],
+		languages : [
+			{"id": 1, "name": "spanish"}, 
+			{"id": 2, "name": "english"}
+		],
 
 		getLangMaxId : function () {
 			if(this.languages.length == 0) return 0;
@@ -28,6 +31,10 @@ app.factory("puzzleService", function () {
 			if(this.getLanguage(name) != null) throw new Error("cannot add " + name + ", a language with the same name already exists");
 			var newLang = this.newLang(name);
 			this.languages.push(newLang);
+		},
+		
+		getLanguages: function(){
+			return this.languages;
 		},
 
 		getLanguage : function (name) {
