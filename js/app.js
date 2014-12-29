@@ -16,6 +16,11 @@ app.config(["$routeProvider", function($routeProvider){
 		templateUrl: "./templates/verIdiomas.html"
 	});
 
+	$routeProvider.when("/verIdioma/:id", {
+		controller: "verIdiomaController",
+		templateUrl: "./templates/verIdioma.html"
+	});
+
 	$routeProvider.when("/agregarIdioma", {
 		controller: "agregarIdiomaController",
 		templateUrl: "./templates/agregarIdioma.html"
